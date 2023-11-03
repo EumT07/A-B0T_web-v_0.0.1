@@ -21,7 +21,7 @@ function images() {
         if(counter == imgArray.length){
             counter = 0
         }
-        imageChosen.setAttribute("src",`/img/${imgArray[counter]}`)
+        imageChosen.setAttribute("src",`img/${imgArray[counter]}`)
     });
 
     leftBtn.addEventListener("click",(e)=>{
@@ -29,7 +29,7 @@ function images() {
         if (counter == -1) {
             counter = imgArray.length -1;
         }
-        imageChosen.setAttribute("src",`/img/${imgArray[counter]}`)
+        imageChosen.setAttribute("src",`img/${imgArray[counter]}`)
     })
 
     setInterval(()=>{
@@ -37,7 +37,7 @@ function images() {
         if(counter == imgArray.length){
             counter = 0
         }
-        imageChosen.setAttribute("src",`/img/${imgArray[counter]}`)
+        imageChosen.setAttribute("src",`img/${imgArray[counter]}`)
     },20000)
 
 }
